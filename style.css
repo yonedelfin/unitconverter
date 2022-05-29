@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background: linear-gradient(246.26deg, #2B75EC 0%, #2EC4DE 100%);
+    width: 100%;
+    padding: 53px 50.6px 169px;
+    
+    text-align: center;
+    gap: 20px;
+    color: white;
+}
+
+input {
+    margin-top: 64px;
+    width: 300px;
+    height: 150px;
+    font-size: 97px;
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    /*
+    border-right: .08em solid white;
+    animation: blink-caret .75s step-end infinite;
+    
+    */
+}
+/*
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+  */
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.bottom {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-name {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.conversion-category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input:focus {
+    animation-play-state: paused;
+}
+
+
+button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+button:hover,
+button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
